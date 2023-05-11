@@ -60,8 +60,8 @@ body {
 
 .center-nut {
     z-index: 999;
-    width: 15px;
-    height: 15px;
+    width: 10px;
+    height: 10px;
     border-radius: 50%;
     background-color: gray;
     position: absolute;
@@ -73,8 +73,8 @@ body {
 
 .center-nut1 {
 
-    width: 10px;
-    height: 10px;
+    width: 6px;
+    height: 6px;
     border-radius: 50%;
     background-color: lightskyblue;
     position: absolute;
