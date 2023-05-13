@@ -25,7 +25,7 @@ function digiFormatter() {
     let digitHours ;
     if (hh > 12) {
         dayNight = "PM";
-        digitHours = hours - 12;
+        digitHours = hh - 12;
     };
     if (ss < 10) {
         ss = '0' + ss;
