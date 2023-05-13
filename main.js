@@ -21,26 +21,26 @@ function digiFormatter() {
     let ss = time.getSeconds();
     let mm = time.getMinutes();
     let hh = time.getHours();
-    let dayNight = "AM"
-    let digitHours
+    let dayNight = "AM";
+    let digitHours ;
     if (hh > 12) {
         dayNight = "PM";
         digitHours = hours - 12;
-    }
+    };
     if (ss < 10) {
         ss = '0' + ss;
-    }
+    };
     if (mm < 10) {
         mm = '0' + mm
     };
     if (hh < 10) {
         hh = '0' + hh
     };
-    clockNum.textContent = `${hh} : ${mm} : ${ss} : ${dayNight}`
-    console.log(clockNum.textContent)
+    clockNum.textContent = `${hh} : ${mm} : ${ss} : ${dayNight}`;
 }
+moveHands()
+digiFormatter()
 setInterval(() => {
-    moveHands()
     digiFormatter()
 }, 1000);
 
